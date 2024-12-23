@@ -10,6 +10,12 @@ spec:
   apiservicedefinitions: {}
   customresourcedefinitions:
     owned:
+    - description: MaintenanceOperatorConfig is the Schema for the maintenanceoperatorconfigs
+        API
+      displayName: Maintenance Operator Config
+      kind: MaintenanceOperatorConfig
+      name: maintenanceoperatorconfigs.maintenance.nvidia.com
+      version: v1alpha1
     - description: NodeMaintenance is the Schema for the nodemaintenances API
       displayName: Node Maintenance
       kind: NodeMaintenance
@@ -25,7 +31,7 @@ spec:
       deployments: null
     strategy: ""
   installModes:
-  - supported: false
+  - supported: true
     type: OwnNamespace
   - supported: false
     type: SingleNamespace
